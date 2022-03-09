@@ -1,0 +1,18 @@
+{
+  "name": "formulario",
+  "version": "1.0.0",
+  "description": "Actividad no2",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.1.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.5"
+  }
+}

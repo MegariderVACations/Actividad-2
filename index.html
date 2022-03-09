@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <TItle>Formulario actividad 2</TItle>
+        <link rel="stylesheet" href="styles/zen-css.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <form id="form-login">
+            <label for="nombre-login">Nombre</label>
+            <input type="text" id="nombre-login" minlength="8" required/>
+            <label for="pass-login">Contraseña</label>
+            <input type="password" id="pass-login" required/>
+            <input type="text" id="email-login" required/>
+            <label for="email-login">Email</label>
+            <label for="fecha-login">Fecha Nacimiento</label>
+            <input type="date" id="fecha-login" max="2004-03-08" required/> +18 requerido
+            <div></div>
+            <label class="ErrorColor" id="error-login"></label>
+            
+            <input type="submit" value="Iniciar Sesion"/>
+            
+        </form>
+        <script type= "text/javascript" src="index.js"> </script>
+
+    </body>
+</html>

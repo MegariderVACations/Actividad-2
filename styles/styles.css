@@ -1,0 +1,26 @@
+form{
+    border-radius: 25px;
+    border-width: medium;
+    border-style: double;
+    text-align: center;
+    padding: 30px;
+}
+
+label{
+    float: left;
+    clear: both;
+}
+
+input[type="text"] input[type="password"]{
+    float: right;
+}
+input[type="submit"]{
+    clear: both;
+    display: block;
+}
+.ErrorColor{
+    background-color: rgb(234, 236, 231);
+    color: rgb(250, 0, 0);
+    border-color: darkred;
+
+}
