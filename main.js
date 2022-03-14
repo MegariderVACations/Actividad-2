@@ -1,6 +1,17 @@
 const {app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path')
 
+
+
+  function buscarUsuario(usuario){
+    let arr = ["Esdras", "Andre","Gonzales","Erwind","Alex"];
+    for(i=0; i < arr.length; i++ ){
+        if(arr[i]== usuario){
+            return true
+        }
+    }
+}
+
 let ventana;
 
 function createWindow(){

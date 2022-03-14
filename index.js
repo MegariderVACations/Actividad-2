@@ -10,10 +10,13 @@ var expMin = RegExp("[a-z]")
 var expNum = RegExp("[0-9]")
 var expEmail = new RegExp(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i)
 
+
 // var exPass = RegExp("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}")
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault()
     var error = ""
+
+
 
     if(!pass.value.match(expMay)){
         error += "EL PASSWORD TIENE QUE TENER UNA MAYUSCULA\n "
@@ -33,10 +36,17 @@ formulario.addEventListener('submit', function(evento){
         
     }
 
+
+    if(buscarUsuario(nombre.value)){
+        error += "USUARIO YA UTILIZADO\n"
+    }
+
     
     if (error == "") {
         alert("Bienvenido "+ nombre.value)
         window.comunicacion.registroValido([nombre.value, pass.value, email.value, fecha.value]);
+        errorMostrar.style.display = "none";
+
     } else {     
        errorMostrar = document.getElementById("error-login")
        errorMostrar.style.display = "inline";

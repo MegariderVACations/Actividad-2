@@ -8,7 +8,7 @@
     <body>
         <form id="form-login">
             <label for="nombre-login">Nombre</label>
-            <input type="text" id="nombre-login" minlength="8" required/>
+            <input type="text" id="nombre-login" minlength="4" required/>
             <label for="pass-login">Contraseña</label>
             <input type="password" id="pass-login" required/>
             <input type="text" id="email-login" required/>
@@ -19,9 +19,11 @@
             <label class="ErrorColor" id="error-login"></label>
             
             <input type="submit" value="Iniciar Sesion"/>
+            <input type="button" value="Vector" onclick="mostrar()"/>
             
         </form>
         <script type= "text/javascript" src="index.js"> </script>
+        <script type= "text/javascript" src="main.js"> </script>
 
     </body>
 </html>
